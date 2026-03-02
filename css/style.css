@@ -2,15 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff5e6;
+    background-color: #fdf5e6; 
     color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
     background-color: #ff704d;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 header nav a {
@@ -25,37 +32,61 @@ header nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px 15px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
     background-color: #ffad99;
+    color: white;
 }
 
 tr:nth-child(even) {
+    background-color: #fff0e6;
+}
+
+tr:hover {
     background-color: #ffe6cc;
 }
 
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
 .galeria img {
-    margin: 10px;
-    border-radius: 5px;
+    width: 280px; 
+    height: 210px; 
+    object-fit: cover; 
+    border: 3px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
 }
 
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px 0;
     background-color: #ff704d;
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
 }
